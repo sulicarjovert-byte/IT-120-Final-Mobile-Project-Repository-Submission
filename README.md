@@ -1,63 +1,69 @@
-# 📱 App Logo Classifier
+# 🎯 Final Flutter Project: Gym Equipment Classifier
 
-[![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)](https://flutter.dev/)
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)](https://www.tensorflow.org/lite)
-
-**App Logo Classifier** is a specialized mobile application built with Flutter that utilizes Machine Learning to identify popular social media and e-commerce logos in real-time. By leveraging a custom-trained TensorFlow Lite model, the app provides instant brand recognition directly on your smartphone.
+**Gym Equipment Classifier** is a specialized mobile application built with **Flutter** that utilizes Machine Learning to identify various gym machines and fitness tools in real-time. By leveraging a custom-trained **TensorFlow Lite** model, the app provides instant equipment recognition directly on your smartphone, helping beginners and athletes identify gear at the gym.
 
 ---
 
-## ✨ Key Features
-
-* **Real-time Detection:** Instantly identify logos using your device's camera.
-* **Edge Computing:** Runs locally on-device using TFLite for fast, offline inference.
-* **High Accuracy:** Trained on a custom dataset of popular social media (Facebook, Instagram, etc.) and e-commerce (Amazon, Shopee, etc.) brands.
-* **Clean UI:** Built with Flutter for a smooth, cross-platform user experience.
+## 📖 Table of Contents
+* [✨ About the Project](#-about-the-project)
+* [📦 Supported Equipment](#-supported-equipment)
+* [🚀 Key Features](#-key-features)
+* [📺 Video Demo](#-video-demo)
+* [🧠 How it Works](#-how-it-works)
 
 ---
 
-## 📸 Screenshots
+## ✨ About the Project
+In a busy fitness environment, this project demonstrates the power of **On-Device AI**. Unlike cloud-based vision APIs, this Flutter app processes images locally. This ensures:
 
-| Splash Screen | Real-time Detection | Results Page |
-| :---: | :---: | :---: |
-| ![Splash](https://via.placeholder.com/200x400?text=Splash+Screen) | ![Detection](https://via.placeholder.com/200x400?text=Logo+Detection) | ![Result](https://via.placeholder.com/200x400?text=Brand+Info) |
+* **🔒 Privacy:** Your gym photos and videos never leave the device.
+* **⚡ Speed:** Near-instant classification, allowing you to identify equipment while walking through the gym.
+* **📶 Accessibility:** Works perfectly in basement gyms or areas with poor cellular reception.
+
+---
+
+## 📦 Supported Equipment
+The model is currently trained to recognize common gym essentials across several categories:
+
+* **🏃 Cardio:** Treadmill, Stationary Bike, Elliptical, Rowing Machine.
+* **🏋️ Strength & Machines:** Leg Press, Lat Pulldown, Chest Press, Cable Machine.
+* **🔔 Free Weights/Basics:** Dumbbell, Barbell, Kettlebell, Weight Bench.
+
+---
+
+## 🚀 Key Features
+* **📸 Live Camera Feed:** Point your camera at a machine to identify what it is instantly.
+* **🖼️ Gallery Picker:** Import photos from your workout logs to run the classifier.
+* **📊 Confidence Scoring:** Displays the percentage of certainty (e.g., "98% Bench Press").
+* **🎨 Clean UI:** A minimalist, "Dark Mode" friendly interface designed for a gym environment.
+
+---
+
+## 📺 Video Demo
+Check out the Gym Equipment Classifier in action! See how the app accurately distinguishes between different machines and weights.
+
+> **[Insert Link to Your Video or GIF Here]**
+
+---
+
+## 🧠 How it Works
+The application uses a **Convolutional Neural Network (CNN)** optimized for mobile performance.
+
+1.  **Pre-processing:** The Flutter app captures a frame and resizes it to the input dimensions required by the TFLite model.
+2.  **Inference:** The `tflite` interpreter runs the image data against the trained weights to find patterns (like the shape of a dumbbell or the structure of a treadmill).
+3.  **Post-processing:** The app maps the highest probability index to the equipment name and displays the result on the UI.
 
 ---
 
 ## 🛠️ Tech Stack
-
-* **Frontend:** [Flutter](https://flutter.dev/) (Dart)
-* **ML Engine:** [TensorFlow Lite](https://www.tensorflow.org/lite)
-* **Model:** Custom-trained CNN (Convolutional Neural Network)
-* **Camera:** [camera](https://pub.dev/packages/camera) plugin for real-time streaming
+* **Frontend:** Flutter (Dart)
+* **Machine Learning:** TensorFlow Lite
+* **Model:** Custom CNN 
 
 ---
 
-## 🚀 How to Run
-
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/YOUR_USERNAME/app-logo-classifier.git](https://github.com/YOUR_USERNAME/app-logo-classifier.git)
-    ```
-2.  **Navigate to the directory:**
-    ```bash
-    cd app-logo-classifier
-    ```
-3.  **Install dependencies:**
-    ```bash
-    flutter pub get
-    ```
-4.  **Run the app:**
-    ```bash
-    flutter run
-    ```
-
----
-
-## 🧠 Model Details
-The app uses a `.tflite` model located in the `assets/` folder. It was trained using a custom dataset of over 2,000 images to ensure high precision across different lighting conditions and angles.
-
----
-
-## 📝 License
-Distributed under the MIT License. See `LICENSE` for more information.
+## 👨‍💻 Getting Started
+1. Clone this repository.
+2. Run `flutter pub get`.
+3. Connect your Android or iOS device.
+4. Run `flutter run`.
