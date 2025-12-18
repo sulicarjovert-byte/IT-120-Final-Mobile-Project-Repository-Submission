@@ -1,73 +1,76 @@
-# 🏋️ Gym Equipment Classifier
+# 🎯 Final Flutter Project: Gym Equipment Classifier
 
-**Gym Equipment Classifier** is a modern, Flutter-based mobile application designed to help fitness enthusiasts identify gym gear instantly. "Discover gym equipment details or classify new items" using a custom-trained machine learning model powered by **TensorFlow Lite**.
+**Gym Equipment Classifier** is a specialized mobile application built with **Flutter** that utilizes **Machine Learning** to identify various gym machines and fitness tools in real-time. By leveraging a custom-trained **TensorFlow Lite** model, the app provides instant equipment recognition directly on your smartphone.
 
 ---
 
 ## 📖 Table of Contents
 * [✨ About the Project](#-about-the-project)
 * [📺 Video Demo](#-video-demo)
-* [📦 Equipment Classes](#-equipment-classes)
+* [📦 Supported Equipment](#-supported-equipment)
 * [🚀 Key Features](#-key-features)
 * [🧠 How it Works](#-how-it-works)
-* [🛠️ Tech Stack](#-tech-stack)
 
 ---
 
 ## ✨ About the Project
-This project bridges the gap between fitness and AI. By processing images locally on the device, the app provides a seamless experience for beginners who may be unfamiliar with specific gym machines.
+"Discover gym equipment details or classify new items."
 
-* **🔒 Privacy-First:** All classifications happen on-device.
-* **⚡ Real-Time Results:** No waiting for cloud processing.
-* **🎨 Modern UI:** A clean, card-based interface with a vibrant purple theme.
+In a world where stepping into a gym can be overwhelming for beginners, this project demonstrates the power of **On-Device AI**. Unlike cloud-based vision APIs, this Flutter app processes images locally, ensuring:
+* **🔒 Privacy:** Your camera feed never leaves the device.
+* **⚡ Speed:** Near-instant classification for a fluid user experience.
+* **📶 Offline Ready:** No internet connection required to identify equipment.
 
 ---
 
 ## 📺 Video Demo
-See the **Gym Equipment Classifier** in action! Click the image below to watch the full demonstration on YouTube, showing real-time classification and the app's smooth UI transitions.
+Check out the **Gym Equipment Classifier** in action! Click the thumbnail below to watch the full demo on YouTube.
 
-[![Gym Equipment Classifier Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+[![Gym Equipment Classifier Demo](https://img.youtube.com/vi/hblKO_olYSQ/0.jpg)](https://youtu.be/hblKO_olYSQ)
 
-> *Click the image above to watch how the app identifies different equipment categories with high accuracy.*
+> *Watch how the app distinguishes between cardio machines and strength training gear with high accuracy.*
 
 ---
 
-## 📦 Equipment Classes
-The app is currently optimized to recognize and provide details for the following gear:
+## 📦 Supported Equipment
+The model is currently trained to recognize and provide details for the following categories:
 
-* **💪 Strength:** Dumbbell, Bench Press, Smith Machine.
-* **🏃 Cardio:** Treadmill, Rowing Machine, Stationary Bike.
-
-Each card in the UI includes a **"View Details"** option to help users understand the equipment's purpose and target muscle groups.
+* **💪 Strength & Weights:**
+    * **Dumbbell:** Free weights for strength training and muscle building.
+    * **Bench Press:** Equipment for upper body and chest exercises.
+    * **Smith Machine:** Guided barbell system for safe weight training.
+* **🏃 Cardio:**
+    * **Treadmill:** Cardio equipment for running and walking exercises.
+    * **Rowing Machine:** Full body cardio and strength training equipment.
+    * **Stationary Bike:** Low impact cardio equipment for leg training.
 
 ---
 
 ## 🚀 Key Features
-* **📸 Floating "Classify" Action:** A prominent, easy-to-reach purple camera button to start recognition instantly.
-* **🗂️ Categorized Grid View:** Equipment is organized into interactive cards for easy browsing.
-* **🔍 Instant Identification:** Uses the smartphone camera to detect gym gear in real-time.
-* **🖼️ Gallery Picker:** Option to import photos from your device for classification.
+* **📸 "Classify" Floating Action:** A prominent, branded button to trigger the camera and start recognition instantly.
+* **🖼️ Interactive Cards:** A clean UI featuring dedicated cards for each equipment type with high-quality icons.
+* **🔍 View Details:** Each identified item allows users to "View Details" to learn more about proper usage.
+* **📊 Real-time AI:** Powered by a custom TFLite model optimized for mobile hardware.
 
 ---
 
 ## 🧠 How it Works
-The application utilizes a **Convolutional Neural Network (CNN)** specifically trained on gym-related imagery.
+The application uses a **Convolutional Neural Network (CNN)** optimized for mobile.
 
-1.  **Image Input:** Users trigger the camera via the purple **"Classify"** button.
-2.  **TFLite Inference:** The app passes the image through a `.tflite` model optimized for mobile.
-3.  **Result Mapping:** The model outputs a probability score, mapping the visual patterns (like a treadmill's belt or a dumbbell's shape) to the correct label.
+1.  **Pre-processing:** The Flutter app captures an image and resizes it to the specific dimensions required by the TFLite model.
+2.  **Inference:** The model analyzes the visual features (e.g., the frame of a treadmill or the shape of a dumbbell).
+3.  **Post-processing:** The app maps the result to the corresponding category name and updates the UI instantly.
 
 ---
 
 ## 🛠️ Tech Stack
-* **Framework:** [Flutter](https://flutter.dev/)
-* **Language:** Dart
-* **Machine Learning:** TensorFlow Lite (TFLite)
-* **Design:** Material 3 Card-based UI
+* **Frontend:** Flutter (Dart)
+* **ML Engine:** TensorFlow Lite
+* **Architecture:** Card-based Material Design
 
 ---
 
-## 👨‍💻 Installation
-1. Clone the repo: `git clone https://github.com/YOUR_USERNAME/gym-equipment-classifier.git`
-2. Install packages: `flutter pub get`
-3. Run the app: `flutter run`
+## 👨‍💻 Getting Started
+1. Clone the repository.
+2. Run `flutter pub get`.
+3. Connect your device and run `flutter run`.
