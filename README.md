@@ -42,7 +42,7 @@ The model is currently trained to recognize common gym essentials across several
 ## 📺 Video Demo
 Check out the Gym Equipment Classifier in action! See how the app accurately distinguishes between different machines and weights.
 
-> **[Insert Link to Your Video or GIF Here]**
+> **[https://youtu.be/hblKO_olYSQ?si=s4dwOb2QsI71I9wR]**
 
 ---
 
