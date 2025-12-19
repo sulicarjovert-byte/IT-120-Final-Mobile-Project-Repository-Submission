@@ -1,3 +1,20 @@
+# Hi there, I'm Jovert Sulicar 👋
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=F75C7E&center=true&vCenter=true&width=435&lines=Frontend+Developer;Flutter+Enthusiast;Problem+Solver;Gym+Rat+%F0%9F%8F%8B%EF%B8%8F" alt="Typing SVG" />
+</p>
+
+---
+
+### 🚀 About Me
+I am a passionate **Frontend Developer** based in **Cabadbaran City**. I love building clean, user-friendly interfaces and exploring the power of mobile development.
+
+- 🔭 I’m currently working on a **Flutter App Classifier**
+- 🌱 I’m currently mastering **HTML, CSS, JS, PHP, and Flutter**
+- ⚡ Fun fact: When I'm not coding, you'll find me at the gym. 🏋️‍♂️
+
+---
+
 # 🎯 Final Flutter Project: Gym Equipment Classifier
 
 **Gym Equipment Classifier** is a specialized mobile application built with **Flutter** that utilizes **Machine Learning** to identify various gym machines and fitness tools in real-time. By leveraging a custom-trained **TensorFlow Lite** model, the app provides instant equipment recognition directly on your smartphone.
