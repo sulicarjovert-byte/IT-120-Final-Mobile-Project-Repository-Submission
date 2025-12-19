@@ -1,0 +1,10 @@
+0 Dumbbell
+1 Bench Press
+2 Treadmill
+3 Rowing Machine
+4 Stationary Bike
+5 Smith Machine
+6 Pullup Bar 
+7 Kettle Bell
+8 Ab Roller
+9 Resistance Bands
